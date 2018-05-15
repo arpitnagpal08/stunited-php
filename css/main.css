@@ -1,0 +1,274 @@
+html, body{
+	height: 100%;
+}
+body{
+	background-color: #f0f0f0 !important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#cover{
+	background:#222 url(../images/cover.jpg) center center no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	color:white;
+	height:100%;
+	text-align:center;
+	display:flex;
+	align-items:center;
+}
+#cover-caption{
+	width:100%;
+
+}
+/* Styling Navbar*/
+#Nav{
+	width: 50%;
+	margin-left: 25%;
+	margin-top: -2%;
+	border-bottom: 5px solid tomato;
+	z-index: 1;
+}
+.nav-link{
+	padding-left: 1.4rem !important;
+	padding-right: 1.4rem !important;
+}
+.website-name, .website-name:hover{
+	color: inherit;
+	text-decoration: none;
+	font-size: 30px;
+	margin-bottom: 0px;
+	margin-top: -2px;
+}
+.social-media{
+	color: #222;
+	font-size: 2em !important;
+	text-decoration: none;
+}
+
+.social-media:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
+/** **/
+.top-container{
+	background-color: yellow;
+	padding: 60px 0 60px 0;
+	text-align: center;
+	transition: ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.left-container, .middle-container, .right-container{
+	margin-left: 2%;
+}
+
+@media screen and (max-width: 576px){
+    .left-container, .middle-container, .right-container{
+        margin-left: 0px;
+        margin-top:  2%;
+    }   
+}
+
+@media screen and (max-width: 768px){
+	.top-container {
+		padding: 0px 0px 0px 0px;
+	}
+	.left-container, .middle-container, .right-container{
+        margin-left: 0px;
+        margin-top:  2%;
+    }
+	#Nav{
+		width: 100%;
+		margin-left: 0px;
+		margin-top: 0px;
+		border-bottom: 0px solid tomato;
+	}
+	
+	.form-control{
+		width: 75% !important;
+	}
+}
+
+@media screen and (max-width: 1348px){
+	.nav-link{
+		font-size: 15px;
+		transition: ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	}	
+}
+
+@media screen and (max-width: 1200px){
+	.nav-link{
+		padding-left: 1.0rem !important;
+		padding-right: 1.0rem !important;
+		font-size: 15px;
+		transition: ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	}	
+}
+
+@media screen and (max-width: 1085px){
+	.nav-link{
+		padding-left: 0.8rem !important;
+		padding-right: 0.8rem !important;
+		transition: ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	}	
+}
+
+@media screen and (max-width: 1020px){
+	.nav-link{
+		padding-left: 0.6rem !important;
+		padding-right: 0.6rem !important;
+		transition: ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	}	
+}
+
+/* side nav*/
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 0px; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 999; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .clear {
+    font-size: 20px;
+}
+
+.active{
+	color: red;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*return to top button*/
+#return-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+	top: 10;
+    padding: 6px 12px;
+    font-size: 14px;
+    display: none;
+    background-color: #1a1c22;
+    z-index: 999;
+    color: #9198aa;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*posts*/
+.posts{
+	padding-top: 10px;
+	border-top: 2px solid lightgrey;
+}
+
+.post-details{
+	padding-top: 10px;
+}
+.comment-active{
+	background-color: #222 !important; 
+	color: #fff !important;
+}
+
+/*forum*/
+.forum-container{
+	background-color: lightgrey;
+	padding: 10px;
+}
+
+.forum-topic-container{
+	border: 1px solid lightgrey;
+	background-color: #fff;
+	padding: 2px;
+}
+
+.forum-topic-container-details{
+	border: 1px solid lightgrey;
+	background-color: #fff;
+	padding: 2px;
+	z-index: 1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+
+.user-forum{
+	width: 80px;
+	height: 80px;
+}
+
+/*footer*/
+
+footer{
+	background: url('../images/footer.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #e7e7e7;
+	padding-top: 20px;
+}
+
+.moto{
+	padding: 50px;
+}
+
+.footer{
+	text-align: center;
+}
+
+.footer-links{
+	list-style-type: none;
+	line-height: 30px;
+	margin-left: -40px;
+}
+
+.footer-links li a{
+	color: white;
+}
+
+.copyright{
+	padding-top: 15px;
+	color: #fff;
+
+}

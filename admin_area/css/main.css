@@ -1,0 +1,13 @@
+body{
+	background-color: #f0f0f0 !important;
+}
+.active a{
+	color: #fff;
+}
+
+.requests{
+	border-right: 18px solid #f0f0f0;
+}
+.profile-edit{
+	padding-bottom: 20px;
+}

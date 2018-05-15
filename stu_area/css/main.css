@@ -1,0 +1,36 @@
+body{
+    background-color: #f0f0f0 !important;
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+
+/*
+.profile-picture:hover{
+    filter: blur(2px);
+    transition: ease-in-out .1s,box-shadow ease-in-out .1s,-webkit-box-shadow ease-in-out .1s;
+}
+*/
+.left-container, .middle-container, .right-container{
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 576px){
+    .left-container, .middle-container, .right-container{
+        margin-left: 0px;
+    }   
+}
+
+.active{
+	color: red;
+}
+
+.posts{
+	padding-top: 10px;
+	border-top: 2px solid lightgrey;
+}
+
+.about-links{
+    padding-right: 10px;
+}
